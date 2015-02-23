@@ -1,6 +1,59 @@
 .row
   .col-sm-6.col-sm-offset-3
-    %h1 Start a group
+    %h1 Start a group (v0.1)
+    %p.lead To make decisions together with people on Loomio, you'll need to set up a group:
+
+    .form-group
+      %label What is the name of your group?
+      %input.form-control{placeholder: "E.g. Mean Millie's Motorcyle Gang for Mums"}
+
+    .form-group
+      %label Does your group have a budget?
+      .radio
+        %label
+          %input{type: 'radio', name: 'pay'} Yes
+      .radio
+        %label
+          %input{type: 'radio', name: 'pay'} No
+
+    %p Organisations with a budget pay to use Loomio, which means we can give it away free to communities that can’t pay for software.
+    %label For paying groups
+    %p Commercial groups pay a monthly subscription of $2 per person, after a 30-day free trial.
+    %label For non-paying groups
+    %p If your group can’t pay for software, we’re happy for you to use Loomio without paying. Occasionally your group members may be asked for a voluntary contribution.
+
+    .text-right
+      %a{href: pricing_path} find out more >
+
+    %a.btn.btn-primary Start group
+
+%br
+%br
+%br
+
+.row
+  .col-sm-6.col-sm-offset-3
+    %h1 Start a group (v0.2)
+    %p.lead To make decisions together with people on Loomio, you'll need to set up a group:
+
+    .form-group
+      %label What is the name of your group?
+      %input.form-control{placeholder: "E.g. Mean Millie's Motorcyle Gang for Mums"}
+
+    %label &hearts; Pay what you want
+    %p Anyone can use Loomio for free. If you decide you're getting value out of it, you can pay what you feel it is worth.
+
+    .text-right
+      %a{href: pricing_path} find out more >
+
+    %a.btn.btn-primary Start group
+%br
+%br
+%br
+
+.row
+  .col-sm-6.col-sm-offset-3
+    %h1 Start a group (v0.3)
     %p.lead To make decisions together with people on Loomio, you'll need to set up a group:
 
     .form-group
@@ -26,4 +79,3 @@
         %a{href: pricing_path} find out more >
 
       %a.btn.btn-primary Start group
-
