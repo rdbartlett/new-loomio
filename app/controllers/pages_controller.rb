@@ -7,6 +7,12 @@ class PagesController < ApplicationController
   def start
   end
 
+  def pricing
+  end
+
+  def services
+  end
+
   # GET /pages
   # GET /pages.json
   def index

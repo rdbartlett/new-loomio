@@ -4,17 +4,18 @@
       %h1
         Loomio
         .small collaborative decision-making
+
       %p.lead Loomio is a tool for communities and organisations to make decisions together without having to meet.
       %form.form-inline
         .form-group
           %input.form-control{placeholder: "Your name"}
         .form-group
           %input.form-control{placeholder: "Email address"}
-        %a.btn.btn-primary{href: '/start'} Sign up
+        %a.btn.btn-primary{href: start_path} Sign up
 .row
   .col-sm-8.col-sm-offset-2
     .blockquote
-      %h2
+      %p.lead
         "I used Loomio this one time and it made my life complete!"
         %small &mdash; Someone Famous
     .text-right
@@ -101,4 +102,4 @@
         %input.form-control{placeholder: "Your name"}
       .form-group
         %input.form-control{placeholder: "Email address"}
-      %a.btn.btn-primary{href: '/start'} Sign up
+      %a.btn.btn-primary{href: 'start_path'} Sign up

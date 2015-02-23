@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   root 'pages#home'
   scope controller: 'pages' do
     get :start
+    get :pricing
+    get :home
+    get :donate
+    get :services
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
