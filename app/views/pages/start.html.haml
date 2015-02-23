@@ -8,19 +8,17 @@
       %input.form-control{placeholder: "E.g. Mean Millie's Motorcyle Gang for Mums"}
 
     .form-group
-      %label Does your group have a budget?
+      %label What kind of group is it?
       .radio
         %label
-          %input{type: 'radio', name: 'pay'} Yes
+          %input{type: 'radio', name: 'pay'}
+          %strong Commercial
+          groups pay a monthly subscription of $2 per person, after a 30-day free trial.
       .radio
         %label
-          %input{type: 'radio', name: 'pay'} No
-
-    %p Organisations with a budget pay to use Loomio, which means we can give it away free to communities that can’t pay for software.
-    %label For paying groups
-    %p Commercial groups pay a monthly subscription of $2 per person, after a 30-day free trial.
-    %label For non-paying groups
-    %p If your group can’t pay for software, we’re happy for you to use Loomio without paying. Occasionally your group members may be asked for a voluntary contribution.
+          %input{type: 'radio', name: 'pay'}
+          %strong Noncommercial
+          use is free of charge. Occasionally your group members may be asked for a voluntary contribution.
 
     .text-right
       %a{href: pricing_path} find out more >
@@ -79,3 +77,43 @@
         %a{href: pricing_path} find out more >
 
       %a.btn.btn-primary Start group
+
+%br
+%br
+%br
+
+.row
+  .col-sm-6.col-sm-offset-3
+    %h1 Start a group (v0.4)
+    %p.lead To make decisions together with people on Loomio, you'll need to set up a group:
+
+    .form-group
+      %label What is the name of your group?
+      %input.form-control{placeholder: "E.g. Mean Millie's Motorcyle Gang for Mums"}
+
+    .form-group
+      %label How big is your group?
+      .radio
+        %label
+          %input{type: 'radio', name: 'size'}
+            %strong up to 25 people
+            &mdash; free
+      .radio
+        %label
+          %input{type: 'radio', name: 'size'}
+            %strong 25-50 people
+            &mdash; $50 per month
+      .radio
+        %label
+          %input{type: 'radio', name: 'size'}
+            %strong 50-100 people
+            &mdash; $80 per month
+      .radio
+        %label
+          %input{type: 'radio', name: 'size'}
+            %strong more than 100 people
+            &mdash; price on arrangement
+
+      %p Note: if your group does not have the budget to pay, you don't have to.
+
+
