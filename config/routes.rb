@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   scope controller: 'pages' do
     get :start
+    get :startv1
+    get :startv2
+    get :startv3
     get :pricing
     get :home
     get :donate

@@ -7,6 +7,15 @@ class PagesController < ApplicationController
   def start
   end
 
+  def startv1
+  end
+
+  def startv2
+  end
+
+  def startv3
+  end
+
   def pricing
   end
 
