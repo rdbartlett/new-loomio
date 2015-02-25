@@ -17,35 +17,44 @@
           %option{value: '160'} 100-200 people
           %option{value: '200'} more than 200 people
 
-      .form-group
-        %p Organisations with a budget pay to use Loomio, which means we can give it away free to communities that can’t pay for software.
-
-      .form-group
-        %label What kind of group is it?
-        %select.form-control#type
-          %option{value: '0'} - Please select a group type -
-          %option{value: 'formal'} Formal organisation - we have a budget
-          %option{value: 'informal'} Informal community - we don't have the budget to pay for software
+      #hideyhole
+        .form-group
+          %label What kind of group is it?
+          %select.form-control#type
+            %option{value: '0'} - Please select a group type -
+            %option{value: 'formal'}   An organisation, company, etc.
+            %option{value: 'informal'} A group of volunteers, friends, etc.
 
 
-      .form-group#high-touch
-        %p For large groups like yours, we're happy to negotiate a discounted subscription.
-        %p
-          %a.btn.btn-primary{} Ask for a quote
+        .form-group#high-touch
+          %p You can try out Loomio for free. We'll be in touch to talk about a price that works for you.
+          %p
+            Want help getting started?
+            %a{href: services_path} Our collaboration coaches can help.
+          %p
+            %a.btn.btn-primary{} Start your 30 day free trial
 
-      .form-group#formal
-        %p
-          The subscription for a group of your size is
-          %strong
-            = surround '$', '/month' do
-              %span#price 40
-        %p
-          %a.btn.btn-primary{} Start your 30 day free trial
+        .form-group#formal
+          %p
+            You can try out Loomio for free. If you decide you want to keep using it, the subscription for a group of your size will be
+            %strong
+              = surround '$', '/month.' do
+                %span#price 40
+          %p
+            Want help getting started?
+            %a{href: services_path} Our collaboration coaches can help.
 
-      .form-group#informal
-        %p You won't be charged a group subscription fee. However, your group members may occasionally be asked for a donation.
-        %p
-          %a.btn.btn-primary{} Start your free group
+          %p
+            %a.btn.btn-primary{} Start your 30 day free trial
+
+
+        .form-group#informal
+          %p You won't be charged a group subscription fee. However, your group members may occasionally be asked for a donation.
+          %p
+            Want help getting started?
+            %a{href: services_path} Our collaboration coaches can help.
+          %p
+            %a.btn.btn-primary{} Start your free group
 
 
 

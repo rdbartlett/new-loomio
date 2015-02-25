@@ -3,10 +3,14 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+
+
+
   $('#form').on 'change', (e) ->
     render_text()
 
   $('#size').on 'change', (e) ->
+    $('#hideyhole').show()
     $('#price').text($(this).val())
 
   render_text = ->
@@ -40,3 +44,4 @@ $ ->
     $('#high-touch').show()
 
   hide_all()
+  $('#hideyhole').hide()
