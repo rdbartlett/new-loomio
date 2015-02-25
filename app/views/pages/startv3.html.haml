@@ -18,11 +18,15 @@
           %option{value: '200'} more than 200 people
 
       .form-group
+
         %label What kind of group is it?
         %select.form-control#type
           %option{value: '0'} - Please select a group type -
           %option{value: 'formal'} Formal organisation - we have a budget
           %option{value: 'informal'} Informal community - we don't have the budget to pay for software
+
+      .form-group
+        %p Organisations with a budget pay to use Loomio, which means we can give it away free to communities that can’t pay for software.
 
       .form-group#high-touch
         %p For large groups like yours, we're happy to negotiate a discounted subscription.
