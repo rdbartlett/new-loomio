@@ -22,8 +22,8 @@
           %label What kind of group is it?
           %select.form-control#type
             %option{value: '0'} - Please select a group type -
-            %option{value: 'formal'}   An organisation, company, etc.
-            %option{value: 'informal'} A group of volunteers, friends, etc.
+            %option{value: 'formal'}   A company, formal organisation or workplace
+            %option{value: 'informal'} A volunteer group or informal network
 
 
         .form-group#high-touch
@@ -40,6 +40,8 @@
             %strong
               = surround '$', '/month.' do
                 %span#price 40
+            If this cost is prohibitive
+            %a get in touch.
           %p
             Want help getting started?
             %a{href: services_path} Our collaboration coaches can help.

@@ -9,13 +9,13 @@
   = csrf_meta_tags
 
 %body
-  .container-fluid
+  .container
     = yield
     .row
       %br
     .footer
       .row
-        .col-sm-6.col-sm-offset-3.text-center
+        .col-sm-8.col-sm-offset-2.text-center
           %hr
           %a{href: root_path} Home
           &middot;
@@ -26,7 +26,7 @@
           %a Contact
           &middot;
           %a Help
-          %br
+          &middot;
           %a{href: pricing_path} Pricing
           &middot;
           %a{href: services_path} Services
@@ -44,7 +44,7 @@
           %a{href: 'http://loomio.org/community'} Community
           &middot;
           %a Translation
-          %br
+          &middot;
           %a{href: 'http://github.com/loomio/loomio'} Github
           &middot;
           %a{href: 'http://enspiral.com'} Enspiral

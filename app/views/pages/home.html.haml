@@ -1,6 +1,6 @@
-.jumbotron
-  .row
-    .col-sm-10.col-sm-offset-1
+.row
+  .col-sm-12
+    .jumbotron
       %h1
         Loomio
         .small collaborative decision-making
@@ -11,34 +11,31 @@
           %input.form-control{placeholder: "Your name"}
         .form-group
           %input.form-control{placeholder: "Email address"}
-        %a.btn.btn-primary{href: startv3_path} Sign up
-.row
+        %a.btn.btn-primary{href: startv3_path} Sign up for free
+
+
+
+.row.panel.panel-default
   .col-sm-12
-    .blockquote
-      %p.lead
-        %em
-          "Loomio is fantastic! Such a brilliant tool that is allowing us to draw feedback from members and give those who are quite reserved at physical meetings a stronger voice."
-        %br
-        %small &mdash; Peter Boyd, Dargaville Arts Association
+    .panel-body
+      %h3.text-center Loomio turns discussion into action
+      .row
+        .col-sm-4.text-center
+          = image_tag "one.png"
+          %h4 Talk things through
+        .col-sm-4.text-center
+          = image_tag "two.png"
+          %h4 Propose a course of action
+        .col-sm-4.text-center
+          = image_tag "three.png"
+          %h4 Decide together
+  .col-sm-12
     .text-right
-      %a{href: 'https://twitter.com/Loomio/timelines/564264041497894912'} what other people are saying about Loomio >
+      %a more about how Loomio works >
+      %br
+      %br
 
-.row
-  %br
-  %br
 
-.row
-  .col-sm-12
-    .row.well
-      .col-sm-4
-        %h3 Talk things through
-      .col-sm-4
-        %h3 Propose a course of action
-      .col-sm-4
-        %h3 Decide together
-      .col-sm-12
-        .text-right
-          %a more about how Loomio works >
 .row
   %br
   %br
@@ -55,12 +52,13 @@
       in
       %a 31 languages
 
+
 .row
   %br
   %br
 
 .row
-  .col-sm-12
+  .col-sm-10.col-sm-offset-1
     .row.well
       .col-sm-3
         %h3 Community
@@ -77,6 +75,23 @@
       .col-sm-12
         .text-right
           %a more stories >
+
+
+
+.row
+  %br
+  %br
+
+.row
+  .col-sm-10.col-sm-offset-1
+    .blockquote
+      %p.lead
+        %em
+          "Loomio is fantastic! Such a brilliant tool that is allowing us to draw feedback from members and give those who are quite reserved at physical meetings a stronger voice."
+        %br
+        %small &mdash; Peter Boyd, Dargaville Arts Association
+    .text-right
+      %a{href: 'https://twitter.com/Loomio/timelines/564264041497894912'} what other people are saying about Loomio >
 
 
 .row
@@ -98,12 +113,12 @@
   %br
 
 .row.well
-  .col-sm-4.col-sm-offset-1.text-right
+  .col-sm-4.text-right
     %p.lead{style: 'margin-bottom: 0'} Get started with Loomio:
-  .col-sm-6
+  .col-sm-8
     %form.form-inline
       .form-group
         %input.form-control{placeholder: "Your name"}
       .form-group
         %input.form-control{placeholder: "Email address"}
-      %a.btn.btn-primary{href: startv3_path} Sign up
+      %a.btn.btn-primary{href: startv3_path} Sign up for free

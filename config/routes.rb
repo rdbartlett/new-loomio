@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     get :startv1
     get :startv2
     get :startv3
+    get :startv4
     get :pricing
     get :home
     get :donate

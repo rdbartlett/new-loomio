@@ -16,6 +16,9 @@ class PagesController < ApplicationController
   def startv3
   end
 
+  def startv4
+  end
+
   def pricing
   end
 
