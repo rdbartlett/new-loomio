@@ -1,62 +1,80 @@
 .row
-  .col-sm-6.col-sm-offset-3
+  .col-sm-8.col-sm-offset-2
     %h1 Start a group (v0.3)
     %p.lead To make decisions together with people on Loomio, you'll need to set up a group:
-    %form#form
+    %form.form-horizontal#form
       .form-group
-        %label What is the name of your group?
-        %input.form-control{placeholder: "E.g. Mean Millie's Motorcyle Gang for Mums"}
+        %label.col-sm-3.control-label Your name
+        .col-sm-8
+          %input.form-control
+      .form-group
+        %label.col-sm-3.control-label Your email
+        .col-sm-8
+          %input.form-control
+      .form-group
+        %label.col-sm-3.control-label Group name
+        .col-sm-8
+          %input.form-control
 
       .form-group
-        %label How big is your group?
-        %select.form-control#size
-          %option{value: '0'} - Please select a group size -
-          %option{value: '20'} up to 25 people
-          %option{value: '40'} 25-50 people
-          %option{value: '80'} 50-100 people
-          %option{value: '160'} 100-200 people
-          %option{value: '200'} more than 200 people
+        %label.col-sm-3.control-label Group size
+        .col-sm-8
+          %select.form-control#size
+            %option{value: '0'} - Please select a group size -
+            %option{value: '20'} up to 25 people
+            %option{value: '40'} 25-50 people
+            %option{value: '80'} 50-100 people
+            %option{value: '160'} 100-200 people
+            %option{value: '200'} more than 200 people
 
       #hideyhole
         .form-group
-          %label What kind of group is it?
-          %select.form-control#type
-            %option{value: '0'} - Please select a group type -
-            %option{value: 'formal'}   A company, formal organisation or workplace
-            %option{value: 'informal'} A volunteer group or informal network
+          %label.col-sm-3.control-label Group type
+          .col-sm-8
+            %select.form-control#type
+              %option{value: '0'} - Please select a group type -
+              %option{value: 'formal'}   A company, formal organisation or workplace
+              %option{value: 'informal'} A volunteer group or informal network
 
 
         .form-group#high-touch
-          %p You can try out Loomio for free. We'll be in touch to talk about a price that works for you.
-          %p
-            Want help getting started?
-            %a{href: services_path} Our collaboration coaches can help.
-          %p
-            %a.btn.btn-primary{} Start your 30 day free trial
+          .col-sm-8.col-sm-offset-3
+            %p You can try out Loomio for free. We'll be in touch to talk about a price that works for you.
+            %p
+              %br
+              %a.btn.btn-primary{} Start your 30 day free trial
+            %p
+              %br
+              Want help getting started?
+              %a{href: services_path} Our collaboration coaches can help.
 
         .form-group#formal
-          %p
-            You can try out Loomio for free. If you decide you want to keep using it, the subscription for a group of your size will be
-            %strong
-              = surround '$', '/month.' do
-                %span#price 40
-            If this cost is prohibitive
-            %a get in touch.
-          %p
-            Want help getting started?
-            %a{href: services_path} Our collaboration coaches can help.
-
-          %p
-            %a.btn.btn-primary{} Start your 30 day free trial
-
+          .col-sm-8.col-sm-offset-3
+            %p
+              You can try out Loomio for free. If you decide you want to keep using it, the subscription for a group of your size will be
+              %strong
+                = surround '$', '/month.' do
+                  %span#price 40
+              If this cost is prohibitive, please
+              %a get in touch.
+            %p
+              %br
+              %a.btn.btn-primary{} Start your 30 day free trial
+            %p
+              %br
+              Want help getting started?
+              %a{href: services_path} Our collaboration coaches can help.
 
         .form-group#informal
-          %p You won't be charged a group subscription fee. However, your group members may occasionally be asked for a donation.
-          %p
-            Want help getting started?
-            %a{href: services_path} Our collaboration coaches can help.
-          %p
-            %a.btn.btn-primary{} Start your free group
+          .col-sm-8.col-sm-offset-3
+            %p You won't be charged a group subscription fee. However, your group members may occasionally be asked for a donation.
+            %p
+              %br
+              %a.btn.btn-primary{} Start your free group
+            %p
+              %br
+              Want help getting started?
+              %a{href: services_path} Our collaboration coaches can help.
 
 
 

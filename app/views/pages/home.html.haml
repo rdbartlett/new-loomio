@@ -1,21 +1,27 @@
-.row
-  .col-sm-12
-    .jumbotron
+.jumbotron
+  .row
+    .col-sm-3
+      %br
+      %br
+      =image_tag "globe.png"
+    .col-sm-9
       %h1
         Loomio
         .small collaborative decision-making
 
-      %p.lead Loomio is a tool for communities and organisations to make decisions together without having to meet.
-      %form.form-inline
-        .form-group
-          %input.form-control{placeholder: "Your name"}
-        .form-group
-          %input.form-control{placeholder: "Email address"}
-        %a.btn.btn-primary{href: startv3_path} Sign up for free
+      %p.lead
+        Loomio is the easiest way for organisations and communities
+        %br
+        to
+        %strong
+          make decisions together
+        wherever people are.
+      %p
+        %a.btn.btn-success.btn-lg{href: startv3_path} Get started for free
 
 
 
-.row.panel.panel-default
+.row
   .col-sm-12
     .panel-body
       %h3.text-center Loomio turns discussion into action
@@ -31,9 +37,35 @@
           %h4 Decide together
   .col-sm-12
     .text-right
-      %a more about how Loomio works >
-      %br
-      %br
+      %p.lead
+        %br
+        %a more about how Loomio works >
+        %br
+
+.row
+  %br
+  %br
+
+.row
+  .col-sm-12
+    .row.well
+      .col-sm-3
+        %h3 Community
+        %p folks are making decisions between meetings
+      .col-sm-3
+        %h3 Government
+        %p the city council engaged citizens in policy development
+      .col-sm-3
+        %h3 Business
+        %p involve stakeholders across timezones
+      .col-sm-3
+        %h3 Citizens
+        %p local assemblies supported by digital space
+      .col-sm-12
+        .text-right
+          %p.lead
+            %br
+            %a more stories >
 
 
 .row
@@ -53,28 +85,6 @@
       %a 31 languages
 
 
-.row
-  %br
-  %br
-
-.row
-  .col-sm-10.col-sm-offset-1
-    .row.well
-      .col-sm-3
-        %h3 Community
-        %p folks are making decisions between meetings
-      .col-sm-3
-        %h3 Government
-        %p the city council engaged citizens in policy development
-      .col-sm-3
-        %h3 Business
-        %p involve stakeholders across timezones
-      .col-sm-3
-        %h3 Citizens
-        %p local assemblies supported by digital space
-      .col-sm-12
-        .text-right
-          %a more stories >
 
 
 
@@ -106,7 +116,9 @@
       %a Enspiral
       in Aotearoa New Zealand, with a wider network of friends, supporters and advisors all over the world.
     .text-right
-      %a more about us >
+      %p.lead
+        %br
+        %a more about us >
 
 .row
   %br
