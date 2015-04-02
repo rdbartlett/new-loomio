@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   scope controller: 'pages' do
+    get :about
     get :start
     get :startv1
     get :startv2
